@@ -435,7 +435,7 @@ footer a {
 }
 .MainContainer header .whiteSpace {
   height: 200px;
-  width: 400px;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
