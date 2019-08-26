@@ -1,20 +1,57 @@
 
 .MainContainer{
     header{
-
-        position: relative;
-        
+        width: 100%;
         display: flex;
-        .main2Img{
-            width: 50%;
-            position: relative;
-        }
+        flex-direction: column;
+        align-items: bottom;
+        .pictureDiv{
+          background-image: url("../images/DroneOverOcean.jpg");
+          width: 100%;
+          height: 1200px;
+          background-repeat: no-repeat;
+          background-size: contain;
         
-        .mainBtn{
-            position: absolute;
-            left: 67%;
-            top: 10%;
-            background-color: #808000;
+          position: fixed;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        display: flex;
+        justify-content: center;
+        
+        
+        
+        // header{
+        //     width: 100%;
+        //     background-image: url("../../images/DroneOverOcean.jpg");
+        //     position: fixed;
+        // }
+        .RentLend{
+            margin-top: 700px;
+            position: relative;
+            background-color: white;
+            height: 300px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-items: space-evenly;
+            
+    
+        }
+        .btnAlign{
+            padding-top: 20px;
+            width: 600px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .main1Btn{
+            
+            background-color: blue;
             
             border-radius: 2.5rem;
             width: 200px;
@@ -25,28 +62,75 @@
             font-size: 2rem;
 
         }
-        .mainImg{
-            width: 50%;
+        .main2Btn{
+            
+            background-color: red;
+            
+            border-radius: 2.5rem;
+            width: 200px;
+            height: 100px;
+            border: none;
+            color: @header-font-color;
+             
+            font-size: 2rem;
+
+        }
+        .whiteSpace{
+            
+            
+            //background-color: white;
+            height: 200px;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 15%;
         }
         .centerText{
+            position: fixed;;
+            padding-top: 60px;
+            width: 400px;
             color: @header-font-color;
-            font-size: 3.8rem;
-            position: absolute;
-            top: 75%;
-            left: 10%;
-
+            font-size: 4.8rem;
         }
     }
-
-    .Container{
-        margin-top: 5%;
-        margin-left: 100px;
-        padding-bottom: 5%;
-        max-width: 1200px;
+    .wrapper{
+        position: relative;
+        background-color: blue;
+        height: 800px;
         width: 100%;
-        background-color: @main-background-color;
-
+        
+        .main2Img{
+            height: 800px;
+            width: 100%;
+            background-image: url("../images/mainGadgets.jpg");
+            background-color: grey;
+            background-size: cover;
+            position: relative;
+        }
+    
     }
+    // .main2Img{
+    //     height: 400px;
+    //     width: 100%;
+    //     background-image: url("../images/mainGadgets.jpg");
+    //     background-color: grey;
+    //     background-size: cover;
+    //     position: fixed;
+    // }
+    .Container{
+        position: relative;
+        //margin-top: 5%;
+        //margin-left: 100px;
+        padding-bottom: 5%;
+        //max-width: 1200px;
+        width: 100%;
+        // background-color: @main-background-color;
+        background-color: white;
+    }
+    
+    
     .intro{
         margin: 0 10%;
         padding-top: 5%;
@@ -68,6 +152,13 @@
         //     margin-left: 5%;
         // }
     }
+    // .RentLend{
+    //     position:relative;
+    //     background-color: grey;
+    //     height: 300px;
+    //     width: 100%;
+
+    // }
     .ColImg{
         width: 80%;
         margin-top: 5%;
