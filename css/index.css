@@ -335,23 +335,44 @@ p {
   width: 100vw;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .MainContainer {
+    width: 100vw;
+    margin: 0 auto;
+  }
+}
 nav {
+  height: 100px;
   width: 100%;
   display: flex;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   justify-content: space-around;
   background-color: white;
-  border: 2px solid grey;
+  bottom-border: 2px solid grey;
   position: absolute;
   top: -2%;
   position: fixed;
   font-size: 3rem;
 }
+@media (max-width: 500px) {
+  nav {
+    padding-right: 5%;
+    margin-top: 2%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 100vw;
+  }
+}
 nav a {
   text-decoration: none;
   color: #E9B40A;
+}
+@media (max-width: 500px) {
+  nav a {
+    font-size: 2.2rem;
+  }
 }
 .footerDiv {
   width: 100%;
@@ -387,6 +408,13 @@ footer a {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .MainContainer header .pictureDiv {
+    margin-top: -40%;
+    width: 100vw;
+    height: 600px;
+  }
+}
 .MainContainer header .RentLend {
   margin-top: 700px;
   position: relative;
@@ -402,6 +430,18 @@ footer a {
   font-weight: bold;
   color: #CCCDD6;
 }
+@media (max-width: 500px) {
+  .MainContainer header .RentLend {
+    margin-top: 600px;
+    width: 100vw;
+    height: 500px;
+  }
+  .MainContainer header .RentLend h2 {
+    text-align: center;
+    margin-left: 5%;
+    width: 80%;
+  }
+}
 .MainContainer header .btnAlign {
   padding-top: 20px;
   width: 600px;
@@ -410,6 +450,20 @@ footer a {
   justify-content: center;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .MainContainer header .btnAlign {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .MainContainer header .btnAlign div {
+    text-align: center;
+    width: 80%;
+  }
 }
 .MainContainer header .main1Btn {
   background-color: #E9140A;
@@ -440,6 +494,11 @@ footer a {
   align-items: center;
   position: absolute;
   top: 15%;
+}
+@media (max-width: 500px) {
+  .MainContainer header .whiteSpace {
+    margin-top: 250px;
+  }
 }
 .MainContainer header .centerText {
   position: fixed;
@@ -512,6 +571,11 @@ footer a {
   margin-left: 5%;
   padding-top: 5%;
   z-index: 0;
+}
+@media (max-width: 500px) {
+  .MainContainer #pBottom {
+    margin-top: 450px;
+  }
 }
 .MainContainer #pBottom p {
   padding: 2.5%;
