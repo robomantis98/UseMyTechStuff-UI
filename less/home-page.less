@@ -252,6 +252,12 @@
     #intro{
         margin: 0 10%;
         padding-top: 5%;
+        h2{
+            @media @mobile{
+                padding-top: 15%;
+                margin-top: 50px;
+            }
+        }
     }
     .pCol{
         height: 600px;
@@ -283,6 +289,11 @@
         margin-left: 5%;
         padding-top: 5%;
         z-index: 0;
+        
+        a{
+            text-decoration: none;
+        }
+        
         @media @mobile{
             margin-top: 450px;
         }

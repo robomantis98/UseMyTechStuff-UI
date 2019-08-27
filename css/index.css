@@ -614,6 +614,12 @@ footer a {
   margin: 0 10%;
   padding-top: 5%;
 }
+@media (max-width: 500px) {
+  .MainContainer #intro h2 {
+    padding-top: 15%;
+    margin-top: 50px;
+  }
+}
 .MainContainer .pCol {
   height: 600px;
   display: flex;
@@ -643,6 +649,9 @@ footer a {
   margin-left: 5%;
   padding-top: 5%;
   z-index: 0;
+}
+.MainContainer #pBottom a {
+  text-decoration: none;
 }
 @media (max-width: 500px) {
   .MainContainer #pBottom {
