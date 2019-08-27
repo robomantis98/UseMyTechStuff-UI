@@ -6,6 +6,7 @@
         flex-direction: column;
         align-items: bottom;
         .pictureDiv{
+            z-index: 0;
           background-image: url("../images/DroneOverOcean.jpg");
           width: 100%;
           height: 1200px;
@@ -128,6 +129,38 @@
                 margin-top: 250px;
             }
         }
+        .whiteSpace2{
+            position: relative;
+            margin-top: 100px;
+            margin-bottom: 150px;
+            height: 200px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .centerText2{
+                position: relative;
+                padding-top: 60px;
+                width: 400px;
+                h2{
+                    font-size: 4.8rem;
+                    font-weight: bold;
+                    text-align: center;
+                    line-height: 2rem;
+                    color: @header-title-color;
+                }
+                .big{
+                    padding-bottom: 2px;
+                    width: 50%;
+                    font-size: 5.8rem;
+                    border-bottom: 3px solid @header-title-color;
+                }
+                .MeetTeam{
+                    color: @Rent;
+                }
+            }
+            
+        }
+        
         .centerText{
             position: fixed;
             padding-top: 60px;
@@ -149,6 +182,44 @@
             }
         }
     }
+    .aboutUs{
+        
+        height: 2000px;
+        width: 100%;
+        position: relative;
+        z-index: 0;
+        
+        margin-bottom: 200px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+        @media @mobile{
+            height: 2000px;
+        }
+        
+        div{
+          
+          height: 150px;
+          width: 800px;
+          border: 2px solid black;
+          @media @mobile{
+              width: 400px;
+              height: 200px;
+              
+          }
+        }
+        h2{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            @media @mobile{
+                padding-bottom: 5%;
+            }
+        }
+    }
     .wrapper{
         position: relative;
         background-color: blue;
@@ -156,6 +227,7 @@
         width: 100%;
         
         .main2Img{
+            z-index: 3; 
             height: 800px;
             width: 100%;
             background-image: url("../images/mainGadgets.jpg");
@@ -165,22 +237,14 @@
         }
     
     }
-    // .main2Img{
-    //     height: 400px;
-    //     width: 100%;
-    //     background-image: url("../images/mainGadgets.jpg");
-    //     background-color: grey;
-    //     background-size: cover;
-    //     position: fixed;
-    // }
+    
     .Container{
         position: relative;
-        //margin-top: 5%;
-        //margin-left: 100px;
+        
         padding-bottom: 5%;
-        //max-width: 1200px;
+        
         width: 100%;
-        // background-color: @main-background-color;
+       
         background-color: white;
     }
     
@@ -200,19 +264,9 @@
         .Col1{
             margin-top: 2%;
         }
-        // .ColImg{
-        //     width: 80%;
-        //     margin-top: 5%;
-        //     margin-left: 5%;
-        // }
+       
     }
-    // .RentLend{
-    //     position:relative;
-    //     background-color: grey;
-    //     height: 300px;
-    //     width: 100%;
-
-    // }
+    
     .ColImg{
         width: 80%;
         margin-top: 5%;
@@ -265,12 +319,6 @@
         }
     }
     
-    
-
-
-
-
-
 
 
 

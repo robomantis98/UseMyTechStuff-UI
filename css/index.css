@@ -342,6 +342,7 @@ p {
   }
 }
 nav {
+  z-index: 4;
   height: 100px;
   width: 100%;
   display: flex;
@@ -350,7 +351,7 @@ nav {
   padding-bottom: 15px;
   justify-content: space-around;
   background-color: white;
-  bottom-border: 2px solid grey;
+  border-bottom: 2px solid grey;
   position: absolute;
   top: -2%;
   position: fixed;
@@ -398,6 +399,7 @@ footer a {
   justify-content: center;
 }
 .MainContainer header .pictureDiv {
+  z-index: 0;
   background-image: url("../images/DroneOverOcean.jpg");
   width: 100%;
   height: 1200px;
@@ -500,6 +502,36 @@ footer a {
     margin-top: 250px;
   }
 }
+.MainContainer header .whiteSpace2 {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.MainContainer header .whiteSpace2 .centerText2 {
+  position: relative;
+  padding-top: 60px;
+  width: 400px;
+}
+.MainContainer header .whiteSpace2 .centerText2 h2 {
+  font-size: 4.8rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2rem;
+  color: #E96E0A;
+}
+.MainContainer header .whiteSpace2 .centerText2 .big {
+  padding-bottom: 2px;
+  width: 50%;
+  font-size: 5.8rem;
+  border-bottom: 3px solid #E96E0A;
+}
+.MainContainer header .whiteSpace2 .centerText2 .MeetTeam {
+  color: #E9140A;
+}
 .MainContainer header .centerText {
   position: fixed;
   padding-top: 60px;
@@ -518,6 +550,45 @@ footer a {
   font-size: 5.8rem;
   border-bottom: 3px solid #E96E0A;
 }
+.MainContainer .aboutUs {
+  height: 2000px;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .MainContainer .aboutUs {
+    height: 2000px;
+  }
+}
+.MainContainer .aboutUs div {
+  height: 150px;
+  width: 800px;
+  border: 2px solid black;
+}
+@media (max-width: 500px) {
+  .MainContainer .aboutUs div {
+    width: 400px;
+    height: 200px;
+  }
+}
+.MainContainer .aboutUs h2 {
+  text-align: center;
+}
+.MainContainer .aboutUs p {
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .MainContainer .aboutUs p {
+    padding-bottom: 5%;
+  }
+}
 .MainContainer .wrapper {
   position: relative;
   background-color: blue;
@@ -525,6 +596,7 @@ footer a {
   width: 100%;
 }
 .MainContainer .wrapper .main2Img {
+  z-index: 3;
   height: 800px;
   width: 100%;
   background-image: url("../images/mainGadgets.jpg");
