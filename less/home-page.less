@@ -37,14 +37,15 @@
           .CallToAction{
             width: 200px;
             height: 100px;
-            border-radius: 2.4rem;
+            border-radius: 2px;
             font-size: 3rem;
             text-shadow: 2px 1px 2px #000000;
-            box-shadow: 5px 10px 8px #000000;
-            background-color: @header-font-color;
-            border-color: @header-font-color;
+            box-shadow: 1px 1px 5px #000;
+            background-color: #ea9703;
+            border-color: #ea9703;
             color: white;
             border: none;
+            cursor: pointer;
             
           }
           
@@ -71,6 +72,7 @@
             h2{
               font-weight: bold;
               color: @RentLend-color;
+              text-shadow: 1px 1px 3px #000;
             }
             @media @mobile{
                 margin-top: 600px;
@@ -121,7 +123,7 @@
             color: @btn-text-color;
             font-size: 2.5rem;
             font-weight: bold;
-
+            box-shadow: 1px 1px 5px #000;
 
         }
         .main2Btn{
@@ -136,7 +138,7 @@
             color: @btn-text-color;
             font-size: 2.5rem;
             font-weight: bold;
-
+            box-shadow: 1px 1px 5px #000;
         }
         .whiteSpace{
             
@@ -171,6 +173,7 @@
                     text-align: center;
                     line-height: 2rem;
                     color: @header-title-color;
+                    text-shadow: 6px 2px 6px #000000;
                 }
                 .big{
                     padding-bottom: 2px;
@@ -237,6 +240,7 @@
         }
         h2{
             text-align: center;
+            
         }
         p{
             text-align: center;
@@ -246,6 +250,8 @@
         }
         img{
             width: 25%;
+            border: 5px solid @header-title-color;
+            margin-bottom: 100px;
             @media @mobile{
                 width: 74%;
             }
