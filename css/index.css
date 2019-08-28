@@ -699,6 +699,9 @@ footer a {
   padding-top: 5%;
   z-index: 0;
 }
+.MainContainer #pBottom h2:hover {
+  color: #E96E0A;
+}
 .MainContainer #pBottom a {
   text-decoration: none;
 }
