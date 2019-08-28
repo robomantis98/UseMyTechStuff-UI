@@ -391,6 +391,12 @@ footer a {
   color: #E9B40A;
   text-decoration: none;
 }
+.MainContainer *:focus {
+  outline: 0;
+}
+.MainContainer button:active {
+  transform: translateY(4px);
+}
 .MainContainer header {
   width: 100%;
   flex-direction: column;
@@ -416,6 +422,21 @@ footer a {
     width: 100vw;
     height: 600px;
   }
+}
+.MainContainer header .pictureDiv .btnHref {
+  border: none;
+}
+.MainContainer header .pictureDiv .CallToAction {
+  width: 200px;
+  height: 100px;
+  border-radius: 2.4rem;
+  font-size: 3rem;
+  text-shadow: 2px 1px 2px #000000;
+  box-shadow: 5px 10px 8px #000000;
+  background-color: #E9B40A;
+  border-color: #E9B40A;
+  color: white;
+  border: none;
 }
 .MainContainer header .RentLend {
   margin-top: 700px;
@@ -543,6 +564,7 @@ footer a {
   text-align: center;
   line-height: 2rem;
   color: #E96E0A;
+  text-shadow: 6px 2px 6px #000000;
 }
 .MainContainer header .centerText .big {
   padding-bottom: 2px;
@@ -591,18 +613,30 @@ footer a {
 }
 .MainContainer .wrapper {
   position: relative;
-  background-color: blue;
-  height: 800px;
+  background-color: white;
+  height: 600px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .MainContainer .wrapper {
+    height: 450px;
+    border-bottom: 4px solid black;
+  }
 }
 .MainContainer .wrapper .main2Img {
   z-index: 3;
-  height: 800px;
-  width: 100%;
+  width: 70%;
   background-image: url("../images/mainGadgets.jpg");
-  background-color: grey;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   position: relative;
+}
+@media (max-width: 500px) {
+  .MainContainer .wrapper .main2Img {
+    width: 100%;
+  }
 }
 .MainContainer .Container {
   position: relative;
