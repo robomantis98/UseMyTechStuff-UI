@@ -573,7 +573,7 @@ footer a {
   border-bottom: 3px solid #E96E0A;
 }
 .MainContainer .aboutUs {
-  height: 2000px;
+  height: 6000px;
   width: 100%;
   position: relative;
   z-index: 0;
@@ -586,7 +586,7 @@ footer a {
 }
 @media (max-width: 500px) {
   .MainContainer .aboutUs {
-    height: 2000px;
+    height: 6000px;
   }
 }
 .MainContainer .aboutUs div {
@@ -609,6 +609,14 @@ footer a {
 @media (max-width: 500px) {
   .MainContainer .aboutUs p {
     padding-bottom: 5%;
+  }
+}
+.MainContainer .aboutUs img {
+  width: 25%;
+}
+@media (max-width: 500px) {
+  .MainContainer .aboutUs img {
+    width: 74%;
   }
 }
 .MainContainer .wrapper {
