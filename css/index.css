@@ -366,6 +366,24 @@ nav {
     width: 100vw;
   }
 }
+nav h2 {
+  align-self: flex-start;
+  text-align: center;
+  margin: 1rem 1rem 0;
+  padding: 1rem 0.5rem;
+  background: #eab602;
+  color: black;
+  height: 50px;
+  font-size: 2rem;
+  padding-top: 1%;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  nav h2 {
+    margin-top: -20px;
+    padding-top: 3%;
+  }
+}
 nav a {
   text-decoration: none;
   color: #E9B40A;
