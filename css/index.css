@@ -659,6 +659,7 @@ footer a {
   }
 }
 .MainContainer .wrapper .main2Img {
+  margin-left: 5%;
   z-index: 3;
   width: 70%;
   background-image: url("../images/mainGadgets.jpg");
@@ -668,6 +669,7 @@ footer a {
 }
 @media (max-width: 500px) {
   .MainContainer .wrapper .main2Img {
+    margin-left: 0;
     width: 100%;
   }
 }
