@@ -7,7 +7,7 @@
         transform: translateY(4px);
     }
     header{
-        width: 100%;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: bottom;
@@ -16,16 +16,21 @@
         .pictureDiv{
             z-index: 0;
           background-image: url("../images/DroneOverOcean.jpg");
-          width: 100%;
+          width: 100vw;
           height: 1200px;
           background-repeat: no-repeat;
           background-size: contain;
         
-          position: fixed;
+          position: absolute;
           display: flex;
           justify-content: center;
           align-items: center;
-
+          @media @largeScreen{
+              margin-top: 200px;
+              width: 100vw;
+              //height: 1500px;
+              height: 140vh;
+          }
           @media @mobile{
               margin-top: -40%;
               width: 100vw;
@@ -35,7 +40,8 @@
               border: none;
           }
           .CallToAction{
-
+            z-index: 0;
+            position: fixed;
             width: 200px;
             height: 100px;
             border-radius: 2px;
@@ -54,6 +60,30 @@
           }
           .CallToAction:hover{
               background-color: #ea9703;
+          }
+          
+          .CallToAction:nth-child(1){
+              position: absolute;
+              top: 20%;
+              right: 10%;
+              width: 400px;
+              height: 400px;
+              text-align: center;
+              color: Transparent;
+              line-height: 50px;
+              @media @mobile{
+                  display:none;
+              }
+              @media only screen and (max-width:1400px){
+                  display:none;
+              }
+              h2{
+                color:Transparent;
+                border-bottom: 2px solid black;
+            }
+            .CallToAction:nth-child(1):hover{
+                background-color: Transparent;
+            }
           }
           
         }
@@ -76,10 +106,15 @@
             flex-direction: column;
             align-items: center;
             align-items: space-evenly;
+            
             h2{
               font-weight: bold;
               color: @RentLend-color;
               text-shadow: 1px 1px 3px #000;
+            }
+            @media @largeScreen{
+                margin-top: 1000px;
+                
             }
             @media @mobile{
                 margin-top: 600px;
@@ -286,6 +321,9 @@
             background-size: contain;
             background-repeat: no-repeat;
             position: relative;
+            @media @largeScreen{
+                margin-left: 30%;
+            }
             @media @mobile{
                 margin-left: 0;
                 width: 100%;

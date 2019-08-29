@@ -416,7 +416,7 @@ footer a {
   transform: translateY(4px);
 }
 .MainContainer header {
-  width: 100%;
+  width: 100vw;
   flex-direction: column;
   align-items: bottom;
   display: flex;
@@ -425,14 +425,21 @@ footer a {
 .MainContainer header .pictureDiv {
   z-index: 0;
   background-image: url("../images/DroneOverOcean.jpg");
-  width: 100%;
+  width: 100vw;
   height: 1200px;
   background-repeat: no-repeat;
   background-size: contain;
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 1700px) {
+  .MainContainer header .pictureDiv {
+    margin-top: 200px;
+    width: 100vw;
+    height: 140vh;
+  }
 }
 @media (max-width: 500px) {
   .MainContainer header .pictureDiv {
@@ -445,6 +452,8 @@ footer a {
   border: none;
 }
 .MainContainer header .pictureDiv .CallToAction {
+  z-index: 0;
+  position: fixed;
   width: 200px;
   height: 100px;
   border-radius: 2px;
@@ -458,6 +467,33 @@ footer a {
 }
 .MainContainer header .pictureDiv .CallToAction:hover {
   background-color: #ea9703;
+}
+.MainContainer header .pictureDiv .CallToAction:nth-child(1) {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  color: Transparent;
+  line-height: 50px;
+}
+@media (max-width: 500px) {
+  .MainContainer header .pictureDiv .CallToAction:nth-child(1) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .MainContainer header .pictureDiv .CallToAction:nth-child(1) {
+    display: none;
+  }
+}
+.MainContainer header .pictureDiv .CallToAction:nth-child(1) h2 {
+  color: Transparent;
+  border-bottom: 2px solid black;
+}
+.MainContainer header .pictureDiv .CallToAction:nth-child(1) .CallToAction:nth-child(1):hover {
+  background-color: Transparent;
 }
 .MainContainer header .RentLend {
   margin-top: 700px;
@@ -474,6 +510,11 @@ footer a {
   font-weight: bold;
   color: #CCCDD6;
   text-shadow: 1px 1px 3px #000;
+}
+@media (min-width: 1700px) {
+  .MainContainer header .RentLend {
+    margin-top: 1000px;
+  }
 }
 @media (max-width: 500px) {
   .MainContainer header .RentLend {
@@ -668,6 +709,11 @@ footer a {
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
+}
+@media (min-width: 1700px) {
+  .MainContainer .wrapper .main2Img {
+    margin-left: 30%;
+  }
 }
 @media (max-width: 500px) {
   .MainContainer .wrapper .main2Img {
