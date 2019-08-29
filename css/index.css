@@ -436,6 +436,7 @@ footer a {
 }
 @media (min-width: 1700px) {
   .MainContainer header .pictureDiv {
+    padding-top: 40px;
     margin-top: 200px;
     width: 100vw;
     height: 140vh;
