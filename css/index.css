@@ -466,6 +466,11 @@ footer a {
   border: none;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .MainContainer header .pictureDiv .CallToAction {
+    margin-top: -60px;
+  }
+}
 .MainContainer header .pictureDiv .CallToAction:nth-child(1) {
   position: absolute;
   top: 20%;
