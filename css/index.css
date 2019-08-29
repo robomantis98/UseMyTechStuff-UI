@@ -618,11 +618,12 @@ footer a {
   color: #E9140A;
 }
 .MainContainer header .centerText {
-  position: fixed;
+  position: relative;
   padding-top: 60px;
   width: 400px;
 }
 .MainContainer header .centerText h2 {
+  position: relative;
   font-size: 4.8rem;
   font-weight: bold;
   text-align: center;
