@@ -465,9 +465,6 @@ footer a {
   border: none;
   cursor: pointer;
 }
-.MainContainer header .pictureDiv .CallToAction:hover {
-  background-color: #ea9703;
-}
 .MainContainer header .pictureDiv .CallToAction:nth-child(1) {
   position: absolute;
   top: 20%;
